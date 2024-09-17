@@ -13,25 +13,23 @@ interface CardProps {
 const CardContainer = styled.div<{ $backgroundColor?: string; $textColor?: string }>`
   background-color: ${props => props.$backgroundColor || '#fff'};
   color: ${props => props.$textColor || '#333'};
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 100%;
-  // Remove margin-bottom if it exists
 `;
 
 const CardTitle = styled.h2`
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 `;
 
 const CardContent = styled.p`
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
 `;
 
 const Card: React.FC<CardProps> = ({ title, content, backgroundColor, textColor }) => (

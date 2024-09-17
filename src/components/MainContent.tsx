@@ -2,19 +2,20 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import Card from './Card';
 import CodeInterface from './CodeInterface';
+import AboutMe from './AboutMe';
 import TeamSection from './TeamSection';
 
 const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 0; // Remove horizontal padding
 `;
 
 const Header = styled.header`
   text-align: center;
   margin-bottom: 3rem;
+  padding: 0 1rem; // Add padding to the header
 `;
 
 const Title = styled.h1`
@@ -22,28 +23,10 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 `;
 
-const ContentGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 3rem;
-`;
-
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
-
-const Subtitle = styled.p`
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 1rem;
-`;
-
-const CodeSection = styled.section`
-  grid-column: span 2;
+const ContentSection = styled.section`
+  width: 100%;
   margin-top: 2rem;
+  padding: 0 1rem; // Add consistent padding to all content sections
 `;
 
 const MainContent: React.FC = () => (
@@ -51,36 +34,15 @@ const MainContent: React.FC = () => (
     <Header>
       <Title>Hi, I'm Samuel Akinosho <br/> a software engineer building great developer experiences.</Title>
     </Header>
-    <ContentGrid>
-      <Column>
-        <Subtitle>My simple mission is to make the life of the average developer easy by providing actionable insights through articles, speaking, demos, or whatever else they need to succeed.</Subtitle>
-      </Column>
-      <Column>
-        <Card
-          title="Quintessence"
-          content="The secret sauce of my work? Making developers' lives a breeze! I'm like a tech-world translator, turning brain-bending concepts into "aha!" moments. Whether I'm scribbling articles, chatting on stage, cooking up demos, or being your personal code whisperer, it's all about helping you crush it in the dev world. Think of me as your coding fairy godparent, sprinkling success dust wherever I go!"
-          backgroundColor="#ff4500"
-          textColor="white"
-        />
-      </Column>
-      <Column>
-        <Card
-          title="Flexible Templates"
-          content="Adapt code templates to your needs."
-          backgroundColor="#fff"
-          textColor="#333"
-        />
-      </Column>
-    </ContentGrid>
-    <ContentGrid>
-      <CodeSection>
-        <CodeInterface />
-      </CodeSection>
-      <Column>
-        {/* This column is intentionally left empty to create the two-column layout for the CodeInterface */}
-      </Column>
-    </ContentGrid>
-    <TeamSection />
+    <ContentSection>
+      <CodeInterface />
+    </ContentSection>
+    <ContentSection>
+      <AboutMe />
+    </ContentSection>
+    <ContentSection>
+      <TeamSection />
+    </ContentSection>
   </MainContainer>
 );
 

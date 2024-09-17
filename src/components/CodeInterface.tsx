@@ -13,7 +13,8 @@ const CodeContainer = styled.pre`
   font-size: 0.9rem;
   line-height: 1.5;
   width: 100%;
-  margin: 0;
+  box-sizing: border-box;
+  margin: 0; // Remove any default margins
 `;
 
 const Keyword = styled.span`
