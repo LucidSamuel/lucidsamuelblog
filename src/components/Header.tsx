@@ -27,7 +27,7 @@ const NavLink = styled(Link)`
 
 const Header: React.FC = () => (
   <HeaderContainer>
-    <h1>AI-Driven Development</h1>
+    <h1>Lucid Samuel</h1>
     <Nav>
       <NavLink href="/">Home</NavLink>
       <NavLink href="/about">About</NavLink>
