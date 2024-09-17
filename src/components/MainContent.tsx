@@ -19,8 +19,9 @@ const Header = styled.header`
 `;
 
 const Title = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 `;
 
 const ContentSection = styled.section`
@@ -32,7 +33,7 @@ const ContentSection = styled.section`
 const MainContent: React.FC = () => (
   <MainContainer>
     <Header>
-      <Title>Hi, I'm Samuel Akinosho <br/> a software engineer building great developer experiences.</Title>
+      <Title>Hey! I'm Samuel Akinosho <br/> a software engineer building great developer experiences.</Title>
     </Header>
     <ContentSection>
       <CodeInterface />

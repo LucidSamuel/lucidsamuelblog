@@ -9,7 +9,8 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f8f8f8;
+  background-color: #000000;
+  color: #FF4600;
 `;
 
 const Nav = styled.nav`
@@ -18,7 +19,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: #333;
+  color: #FF4600;
   text-decoration: none;
   &:hover {
     color: #ff4500;

@@ -7,11 +7,11 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Space Mono', monospace;
-    color: #333;
+    color: #FF4600;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8;
+    background-color: #000000;
   }
 
   h1, h2, h3, h4, h5, h6 {
